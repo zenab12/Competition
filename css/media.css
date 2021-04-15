@@ -1,0 +1,256 @@
+    /*extra small screen as moblie*/
+    
+    @media (max-width: 767px) {
+        header .container h1 {
+            font-size: 20px;
+            margin-top: 8%
+        }
+        header .container h1 span {
+            font-size: 25px;
+        }
+        header form label {
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+        header form i {
+            width: 15%;
+            font-size: 22px;
+            padding-top: 5px
+        }
+        header form input {
+            padding: 5px;
+            width: 78%;
+            font-size: 16px;
+        }
+        header a {
+            border: 4px double #ad7429;
+            padding: 8px;
+            width: 18px;
+            height: 18px;
+        }
+        header a i {
+            top: 50%;
+            font-size: 20px;
+            left: 25%;
+        }
+        .aboutus .container>div {
+            width: 100%;
+        }
+        .aboutus .container .about {
+            margin-top: 1px;
+            padding-left: 0px;
+            order: 2
+        }
+        .aboutus .container .about h2 {
+            font-size: 25px;
+            margin-bottom: 5px
+        }
+        .aboutus .container .about h2 span {
+            font-size: 35px;
+        }
+        .aboutus .container .about p {
+            margin-bottom: 40px;
+            line-height: 40px;
+            font-size: 19px;
+        }
+        .aboutus .container .about ul.social {
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px
+        }
+        .aboutus .container .about ul.social li {
+            width: 33%;
+        }
+        .aboutus .container .about ul.social li a i {
+            font-size: 30px;
+        }
+        .aboutus .container .vector {
+            order: 1
+        }
+        .aboutus .container .vector img {
+            width: 98%;
+            margin: auto;
+            height: 390px
+        }
+    }
+    
+    @media(min-width:500px) and (max-width:660px) {}
+    
+    @media(min-width:661px) and (max-width:767px) {}
+    
+    @media (max-width:320px) {}
+    
+    @media (max-width:280px) {}
+    /*small screen as ipad*/
+    
+    @media (min-width:768px) and (max-width:991px) {
+        header .container h1 {
+            font-size: 30px;
+            margin-top: 10%
+        }
+        header .container h1 span {
+            font-size: 30px;
+        }
+        header form label {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        header form i {
+            width: 10%;
+            font-size: 24px;
+            padding-top: 10px
+        }
+        header form input {
+            padding: 10px;
+            width: 82%;
+            font-size: 20px;
+        }
+        header a {
+            border: 4px double #ad7429;
+            padding: 8px;
+            width: 18px;
+            height: 18px;
+        }
+        header a i {
+            top: 50%;
+            font-size: 20px;
+            left: 25%;
+        }
+        .aboutus .container>div {
+            width: 45%;
+        }
+        .aboutus .container .about {
+            margin-top: -30px;
+            padding-left: 10px
+        }
+        .aboutus .container .about h2 {
+            font-size: 25px;
+        }
+        .aboutus .container .about h2 span {
+            font-size: 35px;
+        }
+        .aboutus .container .about p {
+            margin-bottom: 40px;
+            line-height: 40px;
+            font-size: 19px;
+        }
+        .aboutus .container .about ul.social li {
+            width: 33%;
+        }
+        .aboutus .container .about ul.social li a i {
+            font-size: 30px;
+        }
+        .aboutus .container .vector img {
+            width: 95%;
+            margin: auto;
+            height: 350px
+        }
+    }
+    /*medium screen as ipadpro*/
+    
+    @media (min-width:992px) and (max-width:1999px) {
+        header .container h1 {
+            font-size: 40px;
+        }
+        header .container h1 span {
+            font-size: 35px;
+        }
+        header form label {
+            font-size: 35px;
+        }
+        header form i {
+            width: 14%;
+            font-size: 35px;
+            padding-top: 13px
+        }
+        header form input {
+            padding: 15px;
+            width: 79%;
+            font-size: 23px;
+        }
+        header a {
+            border: 4px double #ad7429;
+            padding: 8px;
+            width: 18px;
+            height: 18px;
+        }
+        header a i {
+            top: 50%;
+            font-size: 20px;
+            left: 25%;
+        }
+        .aboutus .container>div {
+            width: 45%;
+        }
+        .aboutus .container .about {
+            margin-top: -80px;
+            padding-left: 10px
+        }
+        .aboutus .container .about h2 {
+            font-size: 30px;
+        }
+        .aboutus .container .about h2 span {
+            font-size: 40px;
+        }
+        .aboutus .container .about p {
+            margin-bottom: 40px;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        .aboutus .container .about ul.social li {
+            width: 33%;
+        }
+        .aboutus .container .about ul.social li a i {
+            font-size: 35px;
+        }
+        .aboutus .container .vector img {
+            width: 95%;
+            margin: auto;
+            height: 400px
+        }
+    }
+    
+    @media(min-width:1200px) {
+        .aboutus .container {
+            background: transparent
+        }
+        .aboutus .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .aboutus .container>div {
+            width: 45%;
+        }
+        .aboutus .container .about {
+            margin-top: -120px;
+            padding-left: 10px
+        }
+        .aboutus .container .about h2 {
+            color: #000;
+            font-size: 35px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .aboutus .container .about h2 span {
+            font-size: 45px;
+        }
+        .aboutus .container .about p {
+            margin-bottom: 40px;
+            line-height: 40px;
+            font-size: 21px;
+            font-weight: 545;
+        }
+        .aboutus .container .about ul.social li {
+            width: 33%;
+        }
+        .aboutus .container .about ul.social li a i {
+            font-size: 40px;
+        }
+        .aboutus .container .vector img {
+            width: 90%;
+            margin: auto;
+            height: 500px
+        }
+    }
