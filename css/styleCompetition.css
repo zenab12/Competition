@@ -1,6 +1,15 @@
 body {
     margin: 0px;
-    padding: 0px
+    padding: 0px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+header nav {
+    width: 100%;
+    background: linear-gradient(to left bottom, #c2341c, #000);
+    font-size: 50px;
+    padding: 10px 0px;
+    text-align: center
 }
 
 header {
@@ -48,13 +57,17 @@ header .container h1 {
 }
 
 .submit h2 span {
-    color: #ad7429;
+    color: #c2341c;
     font-size: 33px
+}
+
+header .container {
+    padding-left: 0;
 }
 
 header .container h1 span,
 .aboutus .container .about h2 span {
-    color: #ad7429;
+    color: #c2341c;
     font-size: 35px;
     padding: 5px
 }
@@ -67,6 +80,7 @@ header form,
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 10px;
 }
 
 .submit form {
@@ -75,7 +89,7 @@ header form,
 
 header form label {
     font-size: 30px;
-    color: #ad7429;
+    color: #c2341c;
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
@@ -89,22 +103,35 @@ header form label span {
 header form i {
     width: 7%;
     background-color: #FAFAFA;
-    color: #ad7429;
+    color: #c2341c;
     text-align: center;
     font-size: 40px;
-    padding-top: 13px
+    padding-top: 13px;
+    padding-left: 10px
 }
 
 header form input,
 .submit form button {
     outline: none;
-    border: 1px solid#ad7429;
+    border: 1px solid#c2341c;
     ;
     padding: 20px;
     color: #FAFAFA;
     background: rgba(8, 0, 0, .5);
     width: 89%;
     font-size: 26px;
+    font-family: 'Bubblegum Sans', cursive;
+    transition: all 1s ease-in-out
+}
+
+.submit form button:hover {
+    color: #000;
+    background: #fafafa;
+    border: 1px solid #c2341c
+}
+
+header form input {
+    border-left: 0px
 }
 
 .submit form button {
@@ -114,19 +141,26 @@ header form input,
     cursor: pointer;
 }
 
+.submit form button {
+    width: 98.5%
+}
+
 header form input::placeholder {
     color: #FAFAFA;
+    font-family: 'Bubblegum Sans', cursive;
 }
 
 header i {
-    color: #ad7429;
+    color: #c2341c;
     font-size: 24px;
+    border: 1px solid#c2341c;
+    border-right: 0px
 }
 
 header a {
     display: inline-block;
     text-align: center;
-    border: 4px double #ad7429;
+    border: 4px double #c2341c;
     border-radius: 46%;
     padding: 10px;
     margin-bottom: 5%;
@@ -134,15 +168,22 @@ header a {
     height: 25px;
     position: relative;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header a i {
     position: absolute;
     top: 50%;
     left: 28%;
+    border: none;
     animation-name: slide-down;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    scroll-behavior: smooth;
 }
 
 @keyframes slide-down {
@@ -217,7 +258,7 @@ header a i {
     margin-bottom: 40px;
     line-height: 40px;
     font-size: 21px;
-    color: #721b09;
+    color: #c2341c;
     color: rgb(106, 100, 100);
     font-weight: 545;
 }
@@ -244,13 +285,13 @@ header a i {
 }
 
 .aboutus .container .about ul.social li a i {
-    color: #000;
+    color: #c2341c;
     font-size: 40px;
     transition: color 1s ease-in-out;
 }
 
 .aboutus .container .about ul.social li a:hover i {
-    color: #ad7429
+    color: #000;
 }
 
 .aboutus .container .vector img {
@@ -277,13 +318,13 @@ header a i {
 }
 
 .missions h2 {
-    color: #ad7429;
+    color: #c2341c;
     font-size: 55px;
     margin-bottom: 10px;
 }
 
 .border-bottom {
-    background-color: #721b09;
+    background-color: #faaa42;
     width: 140px;
     height: 5px;
     margin-bottom: 50px;
@@ -304,11 +345,11 @@ header a i {
 }
 
 .missions .card:hover {
-    box-shadow: 5px 5px 10px #ad7429;
+    box-shadow: 5px 5px 10px #c2341c;
 }
 
 .missions .card .header {
-    background-color: #ad7429;
+    background-color: #c2341c;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -328,19 +369,26 @@ header a i {
     text-align: center;
     background-color: #000;
     border-radius: 10px 10px 0px 0px;
-    border-bottom: 3px dashed #ad7429;
+    border-bottom: 3px dashed #c2341c;
 }
 
 .missions .card .header h3 span {
-    color: #ad7429
+    color: #faaa42
 }
 
 .missions .card .header .image {
     border-radius: 50%;
     height: 170px;
-    width: 170px;
+    width: 180px;
     margin-bottom: 20px;
-    border: 3px double #FAFAFA
+    border: 3px double #FAFAFA;
+    transition: transform 1s ease-in-out;
+    perspective: 1000px;
+}
+
+.missions .card:hover .image {
+    transform: rotate(360deg);
+    border: 3px solid #faaa42
 }
 
 .missions .card .header .image img {
@@ -352,25 +400,25 @@ header a i {
 .missions .card .caption {
     padding-left: 10px;
     color: #FAFAFA;
-    font-size: 21px;
+    font-size: 19px;
     line-height: 40px
 }
 
 .missions .card .caption span {
-    color: #ad7429;
+    color: #faaa42;
     padding-right: 15px
 }
 
 .missions .card .caption .colors {
-    color: #ad7429
+    color: #faaa42
 }
 
 .missions .card .caption .colors span {
     display: inline-block;
-    width: 30px;
+    width: 25px;
     height: 15px;
     border-radius: 5px;
-    margin: 0px 10px;
+    margin: 0px 5px;
     padding-right: 0px;
     border: 2px solid #FAFAFA
 }
@@ -392,14 +440,7 @@ header a i {
 }
 
 .missions form label {
-    color: #ad7429
-}
-
-.missions form .upload {
-    width: 100%;
-    position: relative;
-    background-color: #ad7429;
-    border: none
+    color: #c2341c
 }
 
 .missions form .upload input {
@@ -408,8 +449,10 @@ header a i {
 }
 
 .upload {
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
+    width: 100%;
+    position: relative;
+    background-color: #c2341c;
+    border: none;
     color: #FAFAFA;
     cursor: pointer;
     font-weight: 400;
@@ -418,11 +461,6 @@ header a i {
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-}
-
-.upload:focus,
-.upload:hover {
-    background-color: #E6E6E6;
 }
 
 .upload {
@@ -468,4 +506,32 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: 18px
+}
+
+.contestIcons {
+    margin-bottom: 50px;
+}
+
+.contestIcons .container {
+    background: transparent;
+}
+
+.contestIcons .container ul {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 10%
+}
+
+.contestIcons .container ul li {
+    width: 25%;
+}
+
+.contestIcons .container ul li img {
+    width: 90px;
+    height: 90px
 }
