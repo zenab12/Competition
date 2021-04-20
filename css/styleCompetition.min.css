@@ -1,0 +1,83 @@
+body{margin:0;padding:0;font-family:'Bubblegum Sans',cursive}
+header nav{width:100%;background:linear-gradient(to left bottom,#c2341c,#000);font-size:50px;padding:10px 0;text-align:center}
+header{background:url(../images/5053309.jpg?2104201727) no-repeat 50% 80%;background-size:cover;width:100%;height:auto;position:relative;z-index:1}
+header img{position:absolute;z-index:2;right:10%;top:50%;width:300px;height:300px;filter:saturate(1.1);display:none}
+.container{width:85%;height:100%;margin:auto;display:flex;padding-left:10px;flex-direction:column;justify-content:center;align-items:center;background:rgba(8,0,0,.5)}
+.submit h2,header .container h1{color:#fafafa;text-align:center;width:100%;margin-top:5%}
+.submit h2{font-size:30px}
+.submit h2 span{color:#c2341c;font-size:33px}
+header .container{padding-left:0}
+.aboutus .container .about h2 span,header .container h1 span{color:#c2341c;font-size:35px;padding:5px}
+.submit form,header form{width:100%;margin-top:15%;padding-bottom:5%;display:flex;flex-direction:row;flex-wrap:wrap;padding-left:10px}
+.submit form{margin-top:5%}
+header form label{font-size:30px;color:#c2341c;width:100%;margin-bottom:30px;text-align:center}
+header form label span{color:#fafafa;padding-left:5px}
+header form i{width:7%;background-color:#fafafa;color:#c2341c;text-align:center;font-size:40px;padding-top:13px;padding-left:10px}
+.submit form button,header form input{outline:0;border:1px solid#c2341c;padding:20px;color:#fafafa;background:rgba(8,0,0,.5);width:89%;font-size:26px;font-family:'Bubblegum Sans',cursive;transition:all 1s ease-in-out}
+.submit form button:hover{color:#000;background:#fafafa;border:1px solid #c2341c}
+header form input{border-left:0}
+.submit form button{text-align:center;width:100%;padding:1%;cursor:pointer}
+.submit form button{width:98.5%}
+header form input::placeholder{color:#fafafa;font-family:'Bubblegum Sans',cursive}
+header i{color:#c2341c;font-size:24px;border:1px solid#c2341c;border-right:0}
+header a{display:inline-block;text-align:center;border:4px double #c2341c;border-radius:46%;padding:10px;margin-bottom:5%;width:25px;height:25px;position:relative;overflow:hidden;scroll-behavior:smooth}
+html{scroll-behavior:smooth}
+header a i{position:absolute;top:50%;left:28%;border:none;animation-name:slide-down;animation-duration:2s;animation-iteration-count:infinite;scroll-behavior:smooth}
+@keyframes slide-down{
+0%{top:0}
+10%{top:10%}
+20%{top:20%}
+30%{top:30%}
+40%{top:40%}
+50%{top:50%}
+60%{top:60%}
+70%{top:70%}
+80%{top:80%}
+90%{top:90%}
+100%{top:100%}
+}
+.aboutus .container{background:0 0}
+.aboutus .container{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between}
+.aboutus .container>div{width:45%}
+.aboutus .container .about{margin-top:-120px;padding-left:10px}
+.aboutus .container .about h2{color:#000;font-size:35px;margin-bottom:30px;font-weight:700;width:100%}
+.aboutus .container .about h2 span{font-size:45px}
+.aboutus .container .about p{margin-bottom:40px;line-height:40px;font-size:21px;color:#c2341c;color:#6a6464;font-weight:545}
+.aboutus .container .about ul.social{list-style:none;width:100%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;padding-left:0}
+.aboutus .container .about ul.social li{width:33%}
+.aboutus .container .about ul.social li a{text-decoration:none;width:100%;text-align:left}
+.aboutus .container .about ul.social li a i{color:#c2341c;font-size:40px;transition:color 1s ease-in-out}
+.aboutus .container .about ul.social li a:hover i{color:#000}
+.aboutus .container .vector img{width:90%;margin:auto;height:500px}
+.missions{display:flex;flex-direction:column;justify-content:center;align-items:center;background:#f5f2f2}
+.missions .container{background:0 0;justify-content:space-between;flex-direction:row;flex-wrap:wrap;display:flex;padding-left:10px}
+.missions h2{color:#c2341c;font-size:55px;margin-bottom:10px}
+.border-bottom{background-color:#faaa42;width:140px;height:5px;margin-bottom:50px;display:inline-block;margin-right:30px}
+.missions .card{width:350px;background-color:#000;color:#fafafa;margin-top:30px;margin-bottom:10px;border-radius:10px;position:relative;box-shadow:5px 5px 10px #e2e0e0;transition:box-shadow 1s ease-in-out}
+.missions .card:hover{box-shadow:5px 5px 10px #c2341c}
+.missions .card .header{background-color:#c2341c;height:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:10px 10px 0 0;border-bottom:3px dashed #000}
+.missions .card .header h3{margin-top:0;padding-top:10px;font-weight:700;font-size:25px;padding:10px 0;width:100%;text-align:center;background-color:#000;border-radius:10px 10px 0 0;border-bottom:3px dashed #c2341c}
+.missions .card .header h3 span{color:#faaa42}
+.missions .card .header .image{border-radius:50%;height:170px;width:180px;margin-bottom:20px;border:3px double #fafafa;transition:transform 1s ease-in-out;perspective:1000px}
+.missions .card:hover .image{transform:rotate(360deg);border:3px solid #faaa42}
+.missions .card .header .image img{width:100%;height:100%;border-radius:50%}
+.missions .card .caption{padding-left:10px;color:#fafafa;font-size:19px;line-height:40px}
+.missions .card .caption span{color:#faaa42;padding-right:15px}
+.missions .card .caption .colors{color:#faaa42}
+.missions .card .caption .colors span{display:inline-block;width:25px;height:15px;border-radius:5px;margin:0 5px;padding-right:0;border:2px solid #fafafa}
+.missions .card .caption .colors span:first-of-type{background-color:#eca03d}
+.missions .card .caption .colors span:nth-of-type(2){background-color:#84271c}
+.missions .card .caption .colors span:nth-of-type(3){background-color:#191210}
+.missions form{width:100%}
+.missions form label{color:#c2341c}
+.missions form .upload input{width:100%;position:relative}
+.upload{width:100%;position:relative;background-color:#c2341c;border:none;color:#fafafa;cursor:pointer;font-weight:400;display:inline-block;padding:0;text-align:center;text-decoration:none;vertical-align:middle;border-radius:0 0 4px 4px;font-size:16px;position:relative;border-top:3px dashed #000!important}
+.upload p{position:absolute;z-index:333;top:5px;text-align:center;width:100%}
+.upload input{cursor:pointer;margin:0;opacity:0;padding:0;position:absolute;right:0;width:100%;height:100%;z-index:555;padding:20px;top:0}
+.submit{background:url(../images/5053309.jpg?2104201727) fixed 50% 50% no-repeat;background-size:cover;margin:50px auto}
+footer{background:#000;color:#fafafa;padding:10px;text-align:center;font-size:18px}
+.contestIcons{margin-bottom:50px}
+.contestIcons .container{background:0 0}
+.contestIcons .container ul{width:90%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;list-style:none;padding-left:10%}
+.contestIcons .container ul li{width:25%}
+.contestIcons .container ul li img{width:90px;height:90px}
