@@ -37,7 +37,7 @@ header img {
     height: 100%;
     margin: auto;
     display: flex;
-    padding-left: 10px;
+    padding-left: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,8 @@ header .container h1 {
     color: #fafafa;
     text-align: center;
     width: 100%;
-    margin-top: 5%
+    margin-top: 5%;
+    margin-bottom: 8%
 }
 
 .submit h2 {
@@ -72,46 +73,56 @@ header .container h1 span {
     padding: 5px
 }
 
-.submit form,
-header form {
+form .submit,
+form {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 0%;
     padding-bottom: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 10px
+    padding-left: 0px
 }
 
-.submit form {
-    margin-top: 5%
+form .submit {
+    margin-top: 5%;
+    padding-bottom: 0%
 }
 
-header form label {
+form header label {
     font-size: 30px;
     color: #c2341c;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center
 }
 
-header form label span {
+form header .formcontainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px
+}
+
+form header label span {
     color: #fafafa;
     padding-left: 5px
 }
 
-header form i {
-    width: 7%;
+form header .formcontainer i {
+    width: 6%;
     background-color: #fafafa;
     color: #c2341c;
     text-align: center;
     font-size: 40px;
+    padding-bottom: 15px;
     padding-top: 13px;
-    padding-left: 10px
+    padding-left: 0px;
 }
 
-.submit form button,
-header form input {
+form .submit button,
+form header input {
     outline: 0;
     border: 1px solid#c2341c;
     padding: 20px;
@@ -123,28 +134,30 @@ header form input {
     transition: all 1s ease-in-out
 }
 
-.submit form button:hover {
+form .submit button:hover {
     color: #000;
     background: #fafafa;
     border: 1px solid #c2341c
 }
 
-header form input {
+form header input {
     border-left: 0
 }
 
-.submit form button {
+form .submit button {
+    margin-bottom: 5%;
+    margin-left: 0px;
     text-align: center;
     width: 100%;
     padding: 1%;
     cursor: pointer
 }
 
-.submit form button {
+form .submit button {
     width: 98.5%
 }
 
-header form input::placeholder {
+header input::placeholder {
     color: #fafafa;
     font-family: 'Bubblegum Sans', cursive
 }
@@ -167,7 +180,8 @@ header a {
     height: 25px;
     position: relative;
     overflow: hidden;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    margin-top: 50px
 }
 
 html {
@@ -177,7 +191,7 @@ html {
 header a i {
     position: absolute;
     top: 50%;
-    left: 28%;
+    left: 30%;
     border: none;
     animation-name: slide-down;
     animation-duration: 2s;
@@ -434,15 +448,15 @@ header a i {
     background-color: #191210
 }
 
-.missions form {
+form .missions {
     width: 100%
 }
 
-.missions form label {
+form .missions label {
     color: #c2341c
 }
 
-.missions form .upload input {
+form .missions .upload input {
     width: 100%;
     position: relative
 }
