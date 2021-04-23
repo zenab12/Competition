@@ -4,8 +4,10 @@ let obj = {};
 
 submit.addEventListener('click', e => {
     e.preventDefault();
-    data.forEach((input,i)=> {
+    data.forEach((input, i) => {
         obj[input.className] = input.value;
     })
     console.log(obj);
-},false)
+
+    window.location.replace("submit.html");
+}, false);

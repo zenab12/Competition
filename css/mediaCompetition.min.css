@@ -114,24 +114,36 @@
         padding: 1%;
         cursor: pointer
     }
-    .contestIcons {
-        margin-bottom: 10px
+    nav {
+        font-size: 10px;
     }
-    .contestIcons .container ul {
-        width: 100%;
-        padding: 0
+    nav ul li span {
+        font-size: 12px
     }
-    .contestIcons .container ul li {
-        width: 25%;
-        margin-bottom: 20px;
-        text-align: center
+    nav img {
+        top: -5px;
+        left: -1px;
+        width: 20px;
+        height: 25px;
     }
-    .contestIcons .container ul li img {
-        width: 50px;
-        height: 50px
+    nav ul li:first-of-type {
+        line-height: 15px;
+        width: 36%
     }
-    header nav {
-        font-size: 30px
+    nav ul {
+        padding-left: 5px;
+    }
+    body.full-background .container {
+        height: 600px
+    }
+    body.full-background .container p {
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        margin: auto;
+        width: 80%;
+        font-size: 25px;
+        word-spacing: 5px
     }
 }
 
@@ -263,6 +275,21 @@
     .uploadFile {
         margin-bottom: -15px
     }
+    nav {
+        font-size: 20px;
+    }
+    nav ul li span {
+        font-size: 23px
+    }
+    nav img {
+        width: 40px;
+        top: -6px;
+        left: 0px;
+        left: 0px
+    }
+    nav ul {
+        padding-left: 7px;
+    }
 }
 
 @media (min-width:992px) and (max-width:1999px) {
@@ -324,6 +351,20 @@
         width: 95%;
         margin: auto;
         height: 400px
+    }
+    nav {
+        font-size: 27px;
+    }
+    nav ul li span {
+        font-size: 30px
+    }
+    nav img {
+        top: -6px;
+        left: 0px;
+        left: 10px
+    }
+    nav ul {
+        padding-left: 7px;
     }
 }
 
@@ -403,5 +444,20 @@
         width: 90%;
         margin: auto;
         height: 500px
+    }
+    nav {
+        font-size: 35px;
+    }
+    nav ul li span {
+        font-size: 40px
+    }
+    nav img {
+        top: -6px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -6px;
+        left: 50px;
     }
 }
