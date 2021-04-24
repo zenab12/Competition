@@ -14,7 +14,6 @@ body.full-background .container {
     justify-content: flex-start;
     align-items: flex-start;
     height: 800px;
-    border-bottom: 10px solid #fff;
     background: rgba(8, 0, 0, .6)
 }
 
@@ -29,9 +28,14 @@ body.full-background .container p {
 }
 
 body.full-background footer {
-    border: none!important;
-    width: 83.7%;
-    margin: auto
+    border: none;
+    width: 100%;
+    margin: auto;
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    padding-top: 3px;
+    border-top: 10px solid #fff;
 }
 
 nav {
