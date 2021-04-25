@@ -19,7 +19,7 @@ submit.addEventListener('click', e => {
         redirect: 'follow'
       };
       
-      fetch("http://rhat0o.pythonanywhere.com/form/", requestOptions)
+      fetch("https://rhat0o.pythonanywhere.com/form/", requestOptions)
         .then(response => {if(response.ok){
           window.location.replace("submit.html");}
           else{
