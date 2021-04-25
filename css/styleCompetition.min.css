@@ -12,25 +12,35 @@ body.full-background {
 
 body.full-background .container {
     justify-content: flex-start;
-    align-items: flex-start;
-    height: 800px;
+    align-items: space-between;
     background: rgba(8, 0, 0, .6)
 }
 
 body.full-background .container p {
     text-align: center;
-    line-height: 90px;
     color: #fff;
     margin: auto;
+    margin-top: 200px;
     width: 80%;
     font-size: 40px;
     word-spacing: 10px
 }
 
+body.full-background .container p span {
+    color: #9a2222;
+    font-size: 50px;
+    display: block;
+    margin: 50px auto;
+}
+
+body.full-background .container p:last-of-type {
+    margin: 10px auto 200px
+}
+
 body.full-background footer {
     border: none;
     width: 100%;
-    margin: auto;
+    margin: 0px auto;
     margin: 0px;
     padding: 0px;
     line-height: 40px;
