@@ -450,7 +450,7 @@ header a i {
 
 .missions .card .header .image {
     border-radius: 10%;
-    height: 220px;
+    height: 180px;
     width: 260px;
     margin-bottom: 20px;
     border: 10px double #fafafa;
@@ -486,7 +486,7 @@ header a i {
 
 .missions .card .caption .colors span {
     display: inline-block;
-    width: 32px;
+    width: 25px;
     height: 25px;
     border-radius: 5px;
     margin: 0px 2px;
@@ -544,20 +544,16 @@ header a i {
 
 /* arena Challenge logo colors*/
 
-.missions .card.arenaChallenge .image {
-    padding: 15px
+.missions .card.arenaChallenge .caption .colors span:nth-of-type(1) {
+    background-color: #1d1d1b
 }
 
-.missions .card.arenaChallenge .caption .colors span:nth-of-type(3) {
-    background-color: #1d1d1b
+.missions .card.arenaChallenge .caption .colors span:nth-of-type(2) {
+    background-color: #fff
 }
 
 
 /* emailChallenge logo colors*/
-
-.missions .card.emailChallenge .image {
-    padding: 15px
-}
 
 .missions .card.emailChallenge .caption .colors span:first-of-type {
     background-color: #fabc05
@@ -577,6 +573,10 @@ header a i {
 
 .missions .card.emailChallenge .caption .colors span:nth-of-type(5) {
     background-color: #4284f5
+}
+
+.missions .card.emailChallenge .caption .colors span:nth-of-type(6) {
+    background-color: #000
 }
 
 form .missions {
@@ -679,4 +679,9 @@ footer img {
 
 .contestIcons nav ul li span {
     color: #faaa42
+}
+
+*::selection {
+    background: #c2341c!important;
+    color: #fff!important;
 }
