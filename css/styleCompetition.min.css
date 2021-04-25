@@ -377,12 +377,12 @@ header a i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #f5f2f2
+    background: #cecbcb12
 }
 
 .missions .container {
     background: 0 0;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
@@ -407,9 +407,9 @@ header a i {
 .missions .card {
     width: 350px;
     background-color: #000;
-    color: #fafafa;
+    color: #fefefe;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     border-radius: 10px;
     position: relative;
     box-shadow: 5px 5px 10px #e2e0e0;
@@ -417,11 +417,11 @@ header a i {
 }
 
 .missions .card:hover {
-    box-shadow: 5px 5px 10px #c2341c
+    box-shadow: 5px 5px 15px #aaa
 }
 
 .missions .card .header {
-    background-color: #c2341c;
+    background-color: #f5f2f2;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -445,28 +445,27 @@ header a i {
 }
 
 .missions .card .header h3 span {
-    color: #faaa42
+    color: #faaa42;
 }
 
 .missions .card .header .image {
-    border-radius: 50%;
-    height: 170px;
-    width: 180px;
+    border-radius: 10%;
+    height: 220px;
+    width: 260px;
     margin-bottom: 20px;
-    border: 3px double #fafafa;
+    border: 10px double #fafafa;
     transition: transform 1s ease-in-out;
     perspective: 1000px
 }
 
 .missions .card:hover .image {
     transform: rotate(360deg);
-    border: 3px solid #faaa42
 }
 
 .missions .card .header .image img {
     width: 100%;
     height: 100%;
-    border-radius: 50%
+    border-radius: 7%
 }
 
 .missions .card .caption {
@@ -487,24 +486,97 @@ header a i {
 
 .missions .card .caption .colors span {
     display: inline-block;
-    width: 25px;
-    height: 15px;
+    width: 32px;
+    height: 25px;
     border-radius: 5px;
-    margin: 0 5px;
+    margin: 0px 2px;
     padding-right: 0;
+    margin-bottom: -10px;
     border: 2px solid #fafafa
 }
 
-.missions .card .caption .colors span:first-of-type {
-    background-color: #eca03d
+.missions .card .caption .colors span:last-of-type {
+    margin: 0px;
+    margin-bottom: -10px;
 }
 
-.missions .card .caption .colors span:nth-of-type(2) {
-    background-color: #84271c
+
+/* cat reloaded logo colors*/
+
+.missions .card.catChallenge .caption .colors span:first-of-type {
+    background-color: #c43418
 }
 
-.missions .card .caption .colors span:nth-of-type(3) {
-    background-color: #191210
+.missions .card.catChallenge .caption .colors span:nth-of-type(2) {
+    background-color: #fefefe
+}
+
+
+/* codepen logo colors*/
+
+.missions .card.codePenChallenge .caption .colors span:first-of-type {
+    background-color: #1c1c1c
+}
+
+.missions .card.codePenChallenge .caption .colors span:nth-of-type(2) {
+    background-color: #fefefe
+}
+
+
+/* footballChallenge logo colors*/
+
+.missions .card.footballChallenge .caption .colors span:first-of-type {
+    background-color: #a59568
+}
+
+.missions .card.footballChallenge .caption .colors span:nth-of-type(2) {
+    background-color: #0066ab
+}
+
+.missions .card.footballChallenge .caption .colors span:nth-of-type(3) {
+    background-color: #000001
+}
+
+.missions .card.footballChallenge .caption .colors span:nth-of-type(3) {
+    background-color: #fff
+}
+
+
+/* arena Challenge logo colors*/
+
+.missions .card.arenaChallenge .image {
+    padding: 15px
+}
+
+.missions .card.arenaChallenge .caption .colors span:nth-of-type(3) {
+    background-color: #1d1d1b
+}
+
+
+/* emailChallenge logo colors*/
+
+.missions .card.emailChallenge .image {
+    padding: 15px
+}
+
+.missions .card.emailChallenge .caption .colors span:first-of-type {
+    background-color: #fabc05
+}
+
+.missions .card.emailChallenge .caption .colors span:nth-of-type(2) {
+    background-color: #eb4336
+}
+
+.missions .card.emailChallenge .caption .colors span:nth-of-type(3) {
+    background-color: #c5211e
+}
+
+.missions .card.emailChallenge .caption .colors span:nth-of-type(4) {
+    background-color: #34a853
+}
+
+.missions .card.emailChallenge .caption .colors span:nth-of-type(5) {
+    background-color: #4284f5
 }
 
 form .missions {
@@ -523,18 +595,20 @@ form .missions .upload input {
 .upload {
     width: 100%;
     position: relative;
-    background-color: #c2341c;
+    background-color: #f5f2f2;
     border: none;
-    color: #fafafa;
+    color: #faaa42;
+    ;
+    text-shadow: 1px 1px 1px #fff;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 800;
     display: inline-block;
     padding: 0;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
     border-radius: 0 0 4px 4px;
-    font-size: 16px;
+    font-size: 19px;
     position: relative;
     border-top: 3px dashed #000!important
 }
